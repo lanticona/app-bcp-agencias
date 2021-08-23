@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AgenciasComponent } from './components/agencias/agencias.component';
 import { AgenciasDetalleComponent } from './components/agencias-detalle/agencias-detalle.component';
 import { FormsModule } from '@angular/forms';
+import { NgxSpinnerModule } from "ngx-bootstrap-spinner";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

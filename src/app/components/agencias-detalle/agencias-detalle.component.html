@@ -1,0 +1,88 @@
+<h3 class="bg-primary text-center" >Agencia Detalle</h3>
+
+<form>
+    <div class="container">
+        <div class="row bg-primary text-light">
+            <div class="col">
+                <h1>Detalle Agencias</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="" class="text-primary" >Nombre de Agencia</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" readonly="true" name="agencia" [(ngModel)]="objAgencia.agencia" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="" class="text-primary">Direccion</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" name="direccion"  [(ngModel)]="objAgencia.direccion" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="" class="text-primary">Distrito</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" name="distrito" [(ngModel)]="objAgencia.distrito" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="" class="text-primary">Provincia</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" name="provincia" [(ngModel)]="objAgencia.provincia" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <label for="" class="text-primary">Latitud</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" name="lat" [(ngModel)]="objAgencia.lat" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="" class="text-primary">Longitud</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" name="lon" [(ngModel)]="objAgencia.lon" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">&nbsp;</div>
+        </div><br>
+        <div class="row ">
+            <div class="col">
+                <button class="btn btn-primary" (click)="actualizarAgencia()" >Actualizar</button>
+            </div>
+        </div>
+    </div>
+
+
+</form>
